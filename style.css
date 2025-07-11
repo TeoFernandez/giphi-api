@@ -1,0 +1,102 @@
+body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #181818;
+            color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b3b3b3;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ff4081;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        #searchInput {
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+            width: 250px;
+            font-size: 1rem;
+            outline: none;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background: #ff4081;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: #e73370;
+        }
+        #results {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            padding: 20px;
+        }
+        .gif-container {
+            background: #242424;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 220px;
+            transition: transform 0.2s;
+        }
+        .gif-container:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .gif-container img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #ff4081;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #e73370;
+        }
+        @media (max-width: 600px) {
+            #results {
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+            }
+            .gif-container {
+                width: 90vw;
+                max-width: 320px;
+            }
+        }
